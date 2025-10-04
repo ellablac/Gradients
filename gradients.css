@@ -493,14 +493,27 @@ The background cannot have spin applied to it, the workaround is to rotate a spa
     }
 }
 
+.text-cutout--lg {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-size: 5vw;
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    display: block;
+    /* new line */
+    width: max-content;
+    /* shrink to text width */
+}
+
 .text-cutout {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
-    font-size: 3rem;
+    font-size: 4vw;
     font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-    display: block;
+    display: flexbox;
     /* new line */
     width: max-content;
     /* shrink to text width */
@@ -511,7 +524,7 @@ The background cannot have spin applied to it, the workaround is to rotate a spa
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
-    font-size: 3rem;
+    font-size: 3vw;
     font-family: Georgia, Cambria, "Times New Roman", Times, serif;
     display: block;
     /* new line */
